@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company - Dashboard</title>
+    <link rel="stylesheet" href="smb_website_css.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- Left Company Logo -->
+            <div class="nav-logo">
+                <img id="company-logo" src="" alt="Company Logo" style="height: 60px; object-fit: contain;" />
+            </div>
+
+            <!-- Hamburger icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Hidden Menu Drawer -->
+        <div class="nav-drawer">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Procurement</a></li>
+                <li><a href="#" class="nav-link">Inventory</a></li>
+                <li><a href="#" class="nav-link">Suppliers</a></li>
+                <li><a href="#" class="nav-link">Financials</a></li>
+                <li><a href="#" class="nav-link">HR & Payroll</a></li>
+                <li><a href="#" class="nav-link">Workflows</a></li>
+                <hr />
+                <li><a href="#" class="nav-link" id="logout-btn">🚪 Log Out</a></li>
+            </ul>
+
+            <!-- Dark Mode Toggle -->
+            <button id="toggle-dark-mode" style="margin-top: 1rem;">🌙 Toggle Dark Mode</button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Procurement</a></li>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Financials</a></li>
+                <li><a href="#">HR & Payroll</a></li>
+                <li><a href="#">Workflows</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-panel">
+            <h2>Welcome, <span id="company-name">Company Name</span></h2>
+            <p>Here's an overview of your SmartFlow workspace. Use the sidebar to navigate through modules like Procurement, Inventory, Financials, and more.</p>
+
+            <!-- Dashboard Action Cards -->
+            <div class="dashboard-sections">
+
+                <!-- Procurement -->
+                <div class="dashboard-group">
+                    <h3>Procurement</h3>
+                    <div class="dashboard-stats">
+                        <a href="#"><div class="stat-card">Create Purchase Request</div></a>
+                        <a href="#"><div class="stat-card">Approve RFQs</div></a>
+                        <a href="#"><div class="stat-card">Track Purchase Orders</div></a>
+                    </div>
+                </div>
+
+                <!-- Inventory -->
+                <div class="dashboard-group">
+                    <h3>Inventory</h3>
+                    <div class="dashboard-stats">
+                        <a href="#"><div class="stat-card">Check Stock Levels</div></a>
+                        <a href="#"><div class="stat-card">View Warehouse Activity</div></a>
+                    </div>
+                </div>
+
+                <!-- Suppliers -->
+                <div class="dashboard-group">
+                    <h3>Suppliers</h3>
+                    <div class="dashboard-stats">
+                        <a href="#"><div class="stat-card">Onboard New Supplier</div></a>
+                        <a href="#"><div class="stat-card">Update Supplier Profile</div></a>
+                    </div>
+                </div>
+
+                <!-- Financials -->
+                <div class="dashboard-group">
+                    <h3>Financials</h3>
+                    <div class="dashboard-stats">
+                        <a href="#"><div class="stat-card">Upload Invoices</div></a>
+                        <a href="#"><div class="stat-card">View Reconciliation Summary</div></a>
+                    </div>
+                </div>
+
+                <!-- HR & Payroll -->
+                <div class="dashboard-group">
+                    <h3>HR & Payroll</h3>
+                    <div class="dashboard-stats">
+                        <a href="#"><div class="stat-card">Manage Employees</div></a>
+                        <a href="#"><div class="stat-card">Process Payroll</div></a>
+                    </div>
+                </div>
+
+                <!-- Workflows -->
+                <div class="dashboard-group">
+                    <h3>Workflows</h3>
+                    <div class="dashboard-stats">
+                        <a href="#"><div class="stat-card">Build Workflow</div></a>
+                        <a href="#"><div class="stat-card">Assign Approvers</div></a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+                <!-- Brand Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img id="footer-logo-img" src="images/SmartFlow-White.png" alt="SmartFlow Logo" style="height: 100px;" />
+                        </a>
+                    </div>
+                    <p>Simplifying enterprise operations through modular, scalable ERP solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#modules">Modules</a></li>
+                        <li><a href="#docs">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="signin.html">Company Sign In</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+                        <p><i class="fas fa-envelope"></i> support@smartflow.app</p>
+                        <p><i class="fas fa-phone"></i> +234 701 234 5678</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 SmartFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navDrawer = document.querySelector('.nav-drawer');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navDrawer.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navDrawer.classList.remove('active');
+        }));
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('Thanks for reaching out! We\'ll get back to you soon.');
+                this.reset();
+            });
+        }
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // 🌙 Dark mode: apply saved preference on page load
+        const savedMode = localStorage.getItem("simulab-theme");
+        if (savedMode === "dark") {
+            document.body.classList.add("dark-mode");
+        } else if (savedMode === "light") {
+            document.body.classList.remove("dark-mode");
+        }
+
+        // Close nav drawer when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!hamburger.contains(e.target) && !navDrawer.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navDrawer.classList.remove('active');
+            }
+        });
+
+        // 🌗 Dark mode toggle + logo swap + save preference
+        function updateLogoTheme() {
+            const logoImg = document.getElementById("logo-img");
+            const footerLogoImg = document.getElementById("footer-logo-img");
+            const isDark = document.body.classList.contains("dark-mode");
+
+            if (logoImg) {
+                logoImg.src = isDark ? "images/SmartFlow-White.png" : "images/SmartFlow-Black.png";
+            }
+
+            if (footerLogoImg) {
+                footerLogoImg.src = isDark ? "images/SmartFlow-White.png" : "images/SmartFlow-Black.png";
+            }
+        }
+
+        // Apply saved theme on load
+        const savedTheme = localStorage.getItem("simulab-theme");
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark-mode");
+        } else {
+            document.body.classList.remove("dark-mode");
+        }
+        updateLogoTheme(); // reflect logo based on saved theme
+
+        // Handle toggle button click
+        const toggleDark = document.getElementById("toggle-dark-mode");
+        if (toggleDark) {
+            toggleDark.addEventListener("click", () => {
+                document.body.classList.toggle("dark-mode");
+                const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+                localStorage.setItem("simulab-theme", mode);
+                updateLogoTheme(); // sync logo
+            });
+        }
+
+        // Get saved email and extract domain
+        const email = localStorage.getItem("smartflow-email");
+        const logoImg = document.getElementById("company-logo");
+
+        if (email && logoImg) {
+            const domain = email.split("@")[1];
+
+            if (domain === "chevron.com") {
+                logoImg.src = "images/chevron.webp";
+            } else if (domain === "qucoon.com") {
+                logoImg.src = "images/qucoon.png";
+            } else {
+                logoImg.src = "images/default-logo.png"; // fallback image if needed
+            }
+        }
+
+        if (!email) {
+            window.location.href = "signin.html";
+        }
+
+        document.getElementById("logout-btn").addEventListener("click", () => {
+            localStorage.removeItem("smartflow-email");
+            window.location.href = "signin.html";
+        });
+
+        // const email = localStorage.getItem("userEmail");
+        const companySpan = document.getElementById("company-name");
+
+        if (email && companySpan) {
+            const domain = email.split("@")[1];
+
+            // Map domains to company display names
+            const companyMap = {
+                "chevron.com": "Chevron",
+                "qucoon.com": "Qucoon"
+            };
+
+            const companyName = companyMap[domain] || "Your Company";
+            companySpan.textContent = companyName;
+        }
+    </script>
+
+</body>
+</html>
