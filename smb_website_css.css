@@ -1453,7 +1453,17 @@ body.dark-mode {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc; /* Already present in your earlier version */
+    background-color: white; /* Optional: helps make the avatar pop */
+}
+
+.avatar-wrapper {
+    padding: 5px;
     border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
 }
 
 .user-info h2 {
@@ -1532,15 +1542,20 @@ body.dark-mode {
 
 /* Dark Mode */
 .dark-mode .account-section {
-    background: #111827;
+    background: #121212;
     color: #f3f4f6;
 }
 
 .dark-mode .user-info p,
 .dark-mode .workspace-info p {
-    color: #d1d5db;
+    color: #64748b;
 }
 
 .dark-mode .workspace-info {
-    background: #1f2937;
+    background: #1e293b;
+    /*color: #1d375a;*/
+}
+
+.dark-mode .workspace-info h3 {
+    color: #64748b;
 }
