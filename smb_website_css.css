@@ -1426,3 +1426,121 @@ body.dark-mode {
 .dark-mode .stat-card p {
     color: #cbd5e1;
 }
+
+/* Container */
+.account-section {
+    padding: 100px 20px;
+    background: var(--bg-color, #f9f9f9);
+    color: var(--text-color, #111);
+}
+
+.account-section h2,
+.account-section h3 {
+    color: var(--heading-color, #1e293b);
+}
+
+/* User Info Header */
+.account-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.user-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.user-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Account Settings */
+.account-settings {
+    margin-bottom: 3rem;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+.settings-form label {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+}
+
+.settings-form input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.settings-form button {
+    margin-top: 1rem;
+}
+
+/* Workspace Info */
+.workspace-info {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.workspace-info p {
+    margin: 0.4rem 0;
+    color: #333;
+}
+
+/* Logout */
+.logout-section {
+    margin-top: 2rem;
+}
+
+.logout-section a {
+    padding: 12px 24px;
+    background: #f43f5e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.logout-section a:hover {
+    background: #e11d48;
+}
+
+/* Dark Mode */
+.dark-mode .account-section {
+    background: #111827;
+    color: #f3f4f6;
+}
+
+.dark-mode .user-info p,
+.dark-mode .workspace-info p {
+    color: #d1d5db;
+}
+
+.dark-mode .workspace-info {
+    background: #1f2937;
+}

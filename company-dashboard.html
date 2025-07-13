@@ -15,7 +15,9 @@
 
             <!-- Left Company Logo -->
             <div class="nav-logo">
-                <img id="company-logo" src="" alt="Company Logo" style="height: 60px; object-fit: contain;" />
+                <a href="company-dashboard.html" class="nav-logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <img id="company-logo" src="" alt="Company Logo" style="height: 60px; object-fit: contain;" />
+                </a>
             </div>
 
             <!-- Hamburger icon -->
@@ -29,12 +31,14 @@
         <!-- Hidden Menu Drawer -->
         <div class="nav-drawer">
             <ul class="nav-menu">
+                <li><a href="company-dashboard.html" class="nav-link">Home</a> </li>
                 <li><a href="#" class="nav-link">Procurement</a></li>
                 <li><a href="#" class="nav-link">Inventory</a></li>
                 <li><a href="#" class="nav-link">Suppliers</a></li>
                 <li><a href="#" class="nav-link">Financials</a></li>
                 <li><a href="#" class="nav-link">HR & Payroll</a></li>
                 <li><a href="#" class="nav-link">Workflows</a></li>
+                <li><a href="user-account.html" class="nav-link">Your Profile</a> </li>
                 <hr />
                 <li><a href="#" class="nav-link" id="logout-btn">🚪 Log Out</a></li>
             </ul>
@@ -48,6 +52,7 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <ul>
+                <li><a href="#">Projects</a></li>
                 <li><a href="#">Procurement</a></li>
                 <li><a href="#">Inventory</a></li>
                 <li><a href="#">Suppliers</a></li>
@@ -64,6 +69,16 @@
 
             <!-- Dashboard Action Cards -->
             <div class="dashboard-sections">
+
+                <!-- Projects -->
+                <div class="dashboard-group">
+                    <h3>Projects</h3>
+                    <div class="dashboard-stats">
+                        <a href="#"><div class="stat-card">Create Project</div></a>
+                        <a href="#"><div class="stat-card">View Projects</div></a>
+                        <a href="#"><div class="stat-card">Track Project Status</div></a>
+                    </div>
+                </div>
 
                 <!-- Procurement -->
                 <div class="dashboard-group">
